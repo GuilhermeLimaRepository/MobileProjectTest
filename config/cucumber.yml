@@ -1,0 +1,2 @@
+android: PLATFORM=android -r features/support -r features/screens/android -r features/stepDefinitions --exclude features/screens/ios --exclude --tags  'not @nok' --tags 'not @iosOnly'
+ios:     PLATFORM=ios -r features/support -r features/screens/ios -r features/stepDefinitions --exclude features/screens/android --tags 'not @androidOnly' --tags  'not @nok' 
