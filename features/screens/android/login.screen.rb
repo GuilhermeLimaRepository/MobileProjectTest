@@ -1,8 +1,8 @@
 class LoginScreen < Utils
 
     def initialize
-        @email = 'input_email'
-        @password = 'input_password'
+        @emailField = 'input_email'
+        @passwordField = 'input_password'
         @enterButton = 'btn_login'
 
         @startBtn ='btn_continue_pin_register'
@@ -17,22 +17,12 @@ class LoginScreen < Utils
         @finishBtn = 'btn_pin_success'     
     end
 
-    attr_accessor :email, :password, :enterButton
+    attr_accessor :emailField, :passwordField, :enterButton
 
     def onboardSkip
         wait_for_element(@alreadyClient)
         find_element(:id, @alreadyClient).click
     end
-
-    # def appLogin(id, element)
-    #     wait_for_element(@email)
-    #     clear_fields(@email)
-    #     send_keys_id(@email, 'g1@qa.com')
-    #     wait_for_element(@password)
-    #     clear_fields(@password)
-    #     send_keys_id(@password, 'ps654321')
-    #     click_id(@enterButton)
-    # end
 
     def pinAccess
         wait_for_element(@firstPinBtn)

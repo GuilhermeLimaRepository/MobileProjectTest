@@ -3,10 +3,12 @@ Dado("Um usuario vendedor faça um login.") do
 end
 
 Quando("O usuario digitar email e senha e clicar em entrar.") do
-    commonMethods.appLogin(@email, @password, @credentials)
+    commonMethods.appLogin(@emailField, @passwordField, CREDENTIALS[:sellerUser], CREDENTIALS[:standardPassword])
     login.pinAccess
 end
 
 Entao("O usuario ira acessar a home do app.") do
     commonMethods.checkLoginSuccessfull
 end    
+
+# @page.enter_text(USER[user.to_sym][:email],@page.email)

@@ -8,12 +8,5 @@ class HomeScreen < Utils
     end
     
     attr_accessor :balanceLabel, :blockedLabel, :receivedLabel, :pagBankIcon
-
-    # def checkLoginSuccessfull
-    #     sleep 5
-    #     find_element(:id, @pagBankIcon).displayed?
-    #     find_element(:id, @balanceLabel).displayed?
-    #     find_element(:id, @blockedLabel).displayed?
-    #     find_element(:id, @receivedLabel).displayed?
-    # end    
+    
 end
