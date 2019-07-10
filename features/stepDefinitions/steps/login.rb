@@ -3,10 +3,10 @@ Dado("Um usuario vendedor faça um login.") do
 end
 
 Quando("O usuario digitar email e senha e clicar em entrar.") do
-    login.appLogin(@email, @senha)
+    commonMethods.appLogin(@email, @password, @credentials)
     login.pinAccess
 end
 
 Entao("O usuario ira acessar a home do app.") do
-    home.checkLoginSuccessfull
+    commonMethods.checkLoginSuccessfull
 end    

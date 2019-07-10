@@ -23,4 +23,8 @@ module Screens
     @home ||= HomeScreen.new
   end
 
+  def commonMethods
+    @commonMethods ||= CommonMethods.new
+  end
+
 end

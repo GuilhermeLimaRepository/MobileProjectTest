@@ -32,7 +32,6 @@ class Utils
       end
     end
     
-    
     #Método para clicar um elemento mapeado na tela por id.
       def click_id(id)
         @driver.find_element(:id, id).click
