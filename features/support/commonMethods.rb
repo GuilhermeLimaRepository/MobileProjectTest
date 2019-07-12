@@ -12,6 +12,7 @@ class CommonMethods < Utils
     end
 
     def checkLoginSuccessfull
+        sleep 5
         @appHomeCheck = HomeScreen.new
         @appHomeCheck.wait_for_element_exist?(@appHomeCheck.balanceLabel ,5)
         @appHomeCheck.wait_for_element_exist?(@appHomeCheck.blockedLabel ,5)

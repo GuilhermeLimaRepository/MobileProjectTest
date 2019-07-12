@@ -6,7 +6,5 @@ class HomeScreen < Utils
         @blockedLabel = 'blocked_label'
         @receivedLabel = 'receive_label'  
     end
-    
     attr_accessor :balanceLabel, :blockedLabel, :receivedLabel, :pagBankIcon
-    
 end

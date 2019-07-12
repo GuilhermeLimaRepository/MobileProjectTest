@@ -1,8 +1,8 @@
 class LoginScreen < Utils
     
     def initialize
-        @email     = "userTextField"
-        @password  = "passTextField"
+        @emailField     = "userTextField"
+        @passwordField  = "passTextField"
         @enterButton = "loginButton"
         
         @alreadyClient = ''
@@ -12,6 +12,8 @@ class LoginScreen < Utils
         @bulletPin = "textRegisterPin"
         @finishBtn = "okButton"
     end
+
+    attr_accessor :emailField, :passwordField, :enterButton
 
         def onboardSkip
             find_elements(:class,"XCUIElementTypeButton")[1].click

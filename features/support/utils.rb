@@ -13,16 +13,8 @@ class Utils
       end  
     
       def wait_for_element_exist?(attribute,timeout)
-        wait = Selenium::WebDriver::Wait.new timeout: timeout
-        begin
-            if ENV['PLATFORM'] == 'android'
-                wait.until { find_element(id: attribute).displayed? }
-            else
-                wait.until { find_element(id: attribute).visible? }
-            end 
-        rescue
-            return false
-        end
+        wait = Selenium::WebDriver::Wait.new timeout: timeout        
+        wait.until { find_element(id: attribute).displayed? }
       end
 
     #Método para esperar um elemento mapeado estar visível na tela por id durante 10s.

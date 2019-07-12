@@ -10,5 +10,3 @@ end
 Entao("O usuario ira acessar a home do app.") do
     commonMethods.checkLoginSuccessfull
 end    
-
-# @page.enter_text(USER[user.to_sym][:email],@page.email)
