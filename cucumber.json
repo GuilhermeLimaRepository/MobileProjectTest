@@ -1,0 +1,80 @@
+[
+  {
+    "uri": "features/bdd/login.feature",
+    "id": "tela-de-login.",
+    "keyword": "Funcionalidade",
+    "name": "Tela de Login.",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "tela-de-login.;login-usuario-vendedor.",
+        "keyword": "Cenario",
+        "name": "Login usuario vendedor.",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14119475000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "Um usuario vendedor faça um login.",
+            "line": 5,
+            "match": {
+              "location": "features/stepDefinitions/steps/login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2674208000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "O usuario digitar email e senha e clicar em entrar.",
+            "line": 6,
+            "match": {
+              "location": "features/stepDefinitions/steps/login.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34863903000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "O usuario ira acessar a home do app.",
+            "line": 7,
+            "match": {
+              "location": "features/stepDefinitions/steps/login.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5185437000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 302594000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
