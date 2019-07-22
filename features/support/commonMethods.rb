@@ -12,7 +12,6 @@ class CommonMethods < Utils
     end
 
     def checkLoginSuccessfull
-        sleep 5
         @appHomeCheck = HomeScreen.new
         @appHomeCheck.wait_for_element_exist?(@appHomeCheck.balanceLabel ,5)
         @appHomeCheck.wait_for_element_exist?(@appHomeCheck.blockedLabel ,5)
@@ -20,4 +19,12 @@ class CommonMethods < Utils
         @appHomeCheck.wait_for_element_exist?(@appHomeCheck.pagBankIcon ,5)
     end    
     
+    def checkLoginIsBlocked
+        @appLoginBlocked = LoginScreen.new
+        @appLoginBlocked.wait_for_element_exist?(@appLoginBlocked.blockedScreen ,5)
+        @appLoginBlocked.click_id(@appLoginBlocked.blockedScreenConfirmButton)
+        @appLoginBlocked.wait_for_element_exist?(@appLoginBlocked.emailField ,5)
+        @appLoginBlocked.wait_for_element_exist?(@appLoginBlocked.passwordField ,5)
+    end    
+
 end

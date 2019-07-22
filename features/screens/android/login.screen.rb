@@ -14,10 +14,13 @@ class LoginScreen < Utils
         @firstPinBtn = 'btn_continue_pin_register'
         @continuePinBtn = 'btn_pin_register_action'
         @bulletPin = 'pinDummyEditText'
-        @finishBtn = 'btn_pin_success'     
+        @finishBtn = 'btn_pin_success'
+        
+        @blockedScreen = 'title'
+        @blockedScreenConfirmButton = 'confirmButton'
     end
 
-    attr_accessor :emailField, :passwordField, :enterButton
+    attr_accessor :emailField, :passwordField, :enterButton, :blockedScreen, :blockedScreenConfirmButton
 
     def onboardSkip
         wait_for_element(@alreadyClient)
