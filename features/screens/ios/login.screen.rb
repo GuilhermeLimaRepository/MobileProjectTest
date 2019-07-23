@@ -11,9 +11,12 @@ class LoginScreen < Utils
         @continuePinBtn = "continue"
         @bulletPin = "textRegisterPin"
         @finishBtn = "okButton"
+
+        @blockedScreen = ''
+        @blockedScreenConfirmButton = ''
     end
 
-    attr_accessor :emailField, :passwordField, :enterButton
+    attr_accessor :emailField, :passwordField, :enterButton, :blockedScreen, :blockedScreenConfirmButton
 
         def onboardSkip
             find_elements(:class,"XCUIElementTypeButton")[1].click
