@@ -4,60 +4,74 @@
     "id": "tela-de-login",
     "keyword": "Funcionalidade",
     "name": "Tela de Login",
-    "description": "Valida cenarios do fluxo de login do app com os seguintes usuarios: Comprador, Vendedor, Empresarial, Secundario e Bloqueado.\nAo fim do fluxo todos os usuarios devem se encontrar na tela da home do app.",
+    "description": "Validar cenarios do fluxo de login do app com todos os tipos de usuarios do app.\nAo fim do fluxo todos os usuarios devem se encontrar na tela da home do app com exceçāo do bloqueado.",
     "line": 3,
+    "tags": [
+      {
+        "name": "@testesLogin",
+        "line": 2
+      }
+    ],
     "elements": [
       {
-        "id": "tela-de-login;login-de-usuario-do-tipo-\"vendedor\"",
-        "keyword": "Cenario",
-        "name": "Login de usuario do tipo \"Vendedor\"",
+        "id": "tela-de-login;login-com-sucesso-com-diferentes-tipos-de-usuários-do-aplicativo-pagbank;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Login com sucesso com diferentes tipos de usuários do aplicativo PagBank",
         "description": "",
-        "line": 7,
+        "line": 14,
         "type": "scenario",
+        "tags": [
+          {
+            "name": "@testesLogin",
+            "line": 2
+          }
+        ],
         "before": [
           {
             "match": {
               "location": "features/support/env.rb:24"
             },
             "result": {
-              "status": "failed",
-              "error_message": "An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1' (Selenium::WebDriver::Error::UnknownError)\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1'\n    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)\n    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)\n./features/support/env.rb:25:in `Before'",
-              "duration": 22586022000
+              "status": "passed",
+              "duration": 17404542000
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "Eu faça um login no app com um usuario do tipo vendedor.",
+            "name": "Que eu seja usuário do tipo \"Vendedor\"",
             "line": 8,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:1"
+              "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2798737000
             }
           },
           {
             "keyword": "Quando ",
-            "name": "Eu finalizar o login e cadastrar o codigo Pin.",
+            "name": "Eu finalizar o login com as credenciais \"g1@qa.com\" e cadastrar o codigo Pin",
             "line": 9,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19962834000
             }
           },
           {
             "keyword": "Entao ",
-            "name": "Devo me encontrar na home do app.",
+            "name": "Devo me encontrar na home do app",
             "line": 10,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3010697000
             }
           }
         ],
@@ -68,62 +82,70 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28000
+              "duration": 3964481000
             }
           }
         ]
       },
       {
-        "id": "tela-de-login;login-de-usuario-do-tipo-\"comprador\"",
-        "keyword": "Cenario",
-        "name": "Login de usuario do tipo \"Comprador\"",
+        "id": "tela-de-login;login-com-sucesso-com-diferentes-tipos-de-usuários-do-aplicativo-pagbank;;3",
+        "keyword": "Esquema do Cenario",
+        "name": "Login com sucesso com diferentes tipos de usuários do aplicativo PagBank",
         "description": "",
-        "line": 12,
+        "line": 15,
         "type": "scenario",
+        "tags": [
+          {
+            "name": "@testesLogin",
+            "line": 2
+          }
+        ],
         "before": [
           {
             "match": {
               "location": "features/support/env.rb:24"
             },
             "result": {
-              "status": "failed",
-              "error_message": "An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1' (Selenium::WebDriver::Error::UnknownError)\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1'\n    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)\n    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)\n./features/support/env.rb:25:in `Before'",
-              "duration": 22529205000
+              "status": "passed",
+              "duration": 15156498000
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "Eu faça um login no app com um usuario do tipo comprador.",
-            "line": 13,
+            "name": "Que eu seja usuário do tipo \"Comprador\"",
+            "line": 8,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2771503000
             }
           },
           {
             "keyword": "Quando ",
-            "name": "Eu finalizar o login e cadastrar o codigo Pin.",
-            "line": 14,
+            "name": "Eu finalizar o login com as credenciais \"kamila_compradora@mailinator.com\" e cadastrar o codigo Pin",
+            "line": 9,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19295460000
             }
           },
           {
             "keyword": "Entao ",
-            "name": "Devo me encontrar na home do app.",
-            "line": 15,
+            "name": "Devo me encontrar na home do app",
+            "line": 10,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3085312000
             }
           }
         ],
@@ -134,62 +156,144 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43000
+              "duration": 400569000
             }
           }
         ]
       },
       {
-        "id": "tela-de-login;login-de-usuario-do-tipo-\"empresarial\"",
-        "keyword": "Cenario",
-        "name": "Login de usuario do tipo \"Empresarial\"",
+        "id": "tela-de-login;login-com-sucesso-com-diferentes-tipos-de-usuários-do-aplicativo-pagbank;;4",
+        "keyword": "Esquema do Cenario",
+        "name": "Login com sucesso com diferentes tipos de usuários do aplicativo PagBank",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@testesLogin",
+            "line": 2
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15145709000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "Que eu seja usuário do tipo \"Empresarial\"",
+            "line": 8,
+            "match": {
+              "location": "features/stepDefinitions/steps/login.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2903866000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "Eu finalizar o login com as credenciais \"empresarial@edimburgo.com\" e cadastrar o codigo Pin",
+            "line": 9,
+            "match": {
+              "location": "features/stepDefinitions/steps/login.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20065962000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "Devo me encontrar na home do app",
+            "line": 10,
+            "match": {
+              "location": "features/stepDefinitions/steps/login.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3284380000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 394450000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tela-de-login;login-com-sucesso-com-diferentes-tipos-de-usuários-do-aplicativo-pagbank;;5",
+        "keyword": "Esquema do Cenario",
+        "name": "Login com sucesso com diferentes tipos de usuários do aplicativo PagBank",
         "description": "",
         "line": 17,
         "type": "scenario",
+        "tags": [
+          {
+            "name": "@testesLogin",
+            "line": 2
+          }
+        ],
         "before": [
           {
             "match": {
               "location": "features/support/env.rb:24"
             },
             "result": {
-              "status": "failed",
-              "error_message": "SIGTERM (SignalException)\n./features/support/env.rb:25:in `Before'",
-              "duration": 9252176000
+              "status": "passed",
+              "duration": 15014458000
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "Eu faça um login no app com um usuario do tipo empresarial.",
-            "line": 18,
+            "name": "Que eu seja usuário do tipo \"Secundario\"",
+            "line": 8,
             "match": {
-              "location": "features/bdd/login.feature:18"
+              "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 2755797000
             }
           },
           {
             "keyword": "Quando ",
-            "name": "Eu finalizar o login e cadastrar o codigo Pin.",
-            "line": 19,
+            "name": "Eu finalizar o login com as credenciais \"tonny@testeapp.com\" e cadastrar o codigo Pin",
+            "line": 9,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 23495884000
             }
           },
           {
             "keyword": "Entao ",
-            "name": "Devo me encontrar na home do app.",
-            "line": 20,
+            "name": "Devo me encontrar na home do app",
+            "line": 10,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3189540000
             }
           }
         ],
@@ -200,62 +304,70 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29000
+              "duration": 430471000
             }
           }
         ]
       },
       {
-        "id": "tela-de-login;login-de-usuario-do-tipo-\"secundario\"",
-        "keyword": "Cenario",
-        "name": "Login de usuario do tipo \"Secundario\"",
+        "id": "tela-de-login;login-com-sucesso-com-diferentes-tipos-de-usuários-do-aplicativo-pagbank;;6",
+        "keyword": "Esquema do Cenario",
+        "name": "Login com sucesso com diferentes tipos de usuários do aplicativo PagBank",
         "description": "",
-        "line": 22,
+        "line": 18,
         "type": "scenario",
+        "tags": [
+          {
+            "name": "@testesLogin",
+            "line": 2
+          }
+        ],
         "before": [
           {
             "match": {
               "location": "features/support/env.rb:24"
             },
             "result": {
-              "status": "failed",
-              "error_message": "An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1' (Selenium::WebDriver::Error::UnknownError)\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1'\n    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)\n    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)\n./features/support/env.rb:25:in `Before'",
-              "duration": 22911943000
+              "status": "passed",
+              "duration": 13960817000
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "Eu faça um login no app com um usuario do tipo secundario.",
-            "line": 23,
+            "name": "Que eu seja usuário do tipo \"Standard\"",
+            "line": 8,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:43"
+              "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2778924000
             }
           },
           {
             "keyword": "Quando ",
-            "name": "Eu finalizar o login e cadastrar o codigo Pin.",
-            "line": 24,
+            "name": "Eu finalizar o login com as credenciais \"l1@qa.com\" e cadastrar o codigo Pin",
+            "line": 9,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 21646778000
             }
           },
           {
             "keyword": "Entao ",
-            "name": "Devo me encontrar na home do app.",
-            "line": 25,
+            "name": "Devo me encontrar na home do app",
+            "line": 10,
             "match": {
-              "location": "/Users/agnunes/.rvm/gems/ruby-2.6.3/gems/cucumber-3.1.2/lib/cucumber/step_match.rb:154"
+              "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2782414000
             }
           }
         ],
@@ -266,77 +378,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23000
-            }
-          }
-        ]
-      },
-      {
-        "id": "tela-de-login;login-de-usuario-do-tipo-\"bloqueado\"",
-        "keyword": "Cenario",
-        "name": "Login de usuario do tipo \"Bloqueado\"",
-        "description": "",
-        "line": 27,
-        "type": "scenario",
-        "before": [
-          {
-            "match": {
-              "location": "features/support/env.rb:24"
-            },
-            "result": {
-              "status": "failed",
-              "error_message": "An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1' (Selenium::WebDriver::Error::UnknownError)\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/agnunes/Library/Android/sdk/platform-tools/adb -P 5037 -s LGM250Q8K7INJ7AUG6 shell pm install -g /data/local/tmp/appium_cache/7afc36cc29d165aac9af0e46a886df6fa3796919.apk' exited with code 1'; Stderr: 'Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]'; Code: '1'\n    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)\n    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:447:37)\n./features/support/env.rb:25:in `Before'",
-              "duration": 22602027000
-            }
-          }
-        ],
-        "steps": [
-          {
-            "keyword": "Dado ",
-            "name": "Eu faça um login no app com um usuario do tipo bloqueado.",
-            "line": 28,
-            "match": {
-              "location": "features/stepDefinitions/steps/login.rb:57"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "keyword": "Quando ",
-            "name": "Eu logar no app.",
-            "line": 29,
-            "match": {
-              "location": "features/bdd/login.feature:29"
-            },
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "keyword": "Entao ",
-            "name": "Devo me encontrar em uma tela de erro informando o bloqueio da conta.",
-            "line": 30,
-            "match": {
-              "location": "features/bdd/login.feature:30"
-            },
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "features/support/env.rb:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24000
+              "duration": 450271000
             }
           }
         ]
       }
     ]
   }
-]]
+]

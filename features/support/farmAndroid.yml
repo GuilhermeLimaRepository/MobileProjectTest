@@ -1,0 +1,13 @@
+server: "hub-cloud.browserstack.com"
+user: "davos2"
+key: "DefmKXUxPW3sysszpKRZ"
+ 
+common_caps:
+  "build": "cucumber-browserstack"
+  "browserstack.debug": true
+ 
+browser_caps:
+  -
+    "device": "Google Pixel"
+    "app": "bs://<hashed app-id>"
+    "name": "single_test"
