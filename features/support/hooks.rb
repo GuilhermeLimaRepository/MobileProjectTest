@@ -1,5 +1,3 @@
-
-
 # Screens se torna variavel global
 World(Screens)
 
