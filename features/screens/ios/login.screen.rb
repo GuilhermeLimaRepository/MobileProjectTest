@@ -37,7 +37,7 @@ class LoginScreen < Utils
         end   
         
         def pinRegistration
-            sleep 0.4
+            sleep 1
             3.times{
                 find_element(name: '8').click
                 find_element(name: '9').click
