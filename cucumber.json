@@ -29,11 +29,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/env.rb:24"
+              "location": "features/support/hooks.rb:6"
             },
             "result": {
               "status": "passed",
-              "duration": 17404542000
+              "duration": 15219569000
             }
           }
         ],
@@ -47,7 +47,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2798737000
+              "duration": 2479230000
             }
           },
           {
@@ -59,7 +59,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19962834000
+              "duration": 21642694000
             }
           },
           {
@@ -71,18 +71,18 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3010697000
+              "duration": 1890220000
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:28"
+              "location": "features/support/hooks.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3964481000
+              "duration": 99692000
             }
           }
         ]
@@ -103,11 +103,12 @@
         "before": [
           {
             "match": {
-              "location": "features/support/env.rb:24"
+              "location": "features/support/hooks.rb:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 15156498000
+              "status": "failed",
+              "error_message": "end of file reached (EOFError)\n./features/support/hooks.rb:7:in `Before'",
+              "duration": 9004344000
             }
           }
         ],
@@ -120,8 +121,7 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "passed",
-              "duration": 2771503000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +132,7 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 19295460000
+              "status": "skipped"
             }
           },
           {
@@ -144,19 +143,18 @@
               "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 3085312000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:28"
+              "location": "features/support/hooks.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 400569000
+              "duration": 891000
             }
           }
         ]
@@ -177,11 +175,12 @@
         "before": [
           {
             "match": {
-              "location": "features/support/env.rb:24"
+              "location": "features/support/hooks.rb:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 15145709000
+              "status": "failed",
+              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/hooks.rb:7:in `Before'",
+              "duration": 3547000
             }
           }
         ],
@@ -194,8 +193,7 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "passed",
-              "duration": 2903866000
+              "status": "skipped"
             }
           },
           {
@@ -206,8 +204,7 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 20065962000
+              "status": "skipped"
             }
           },
           {
@@ -218,19 +215,18 @@
               "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 3284380000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:28"
+              "location": "features/support/hooks.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 394450000
+              "duration": 908000
             }
           }
         ]
@@ -251,11 +247,12 @@
         "before": [
           {
             "match": {
-              "location": "features/support/env.rb:24"
+              "location": "features/support/hooks.rb:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 15014458000
+              "status": "failed",
+              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/hooks.rb:7:in `Before'",
+              "duration": 8168000
             }
           }
         ],
@@ -268,8 +265,7 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "passed",
-              "duration": 2755797000
+              "status": "skipped"
             }
           },
           {
@@ -280,8 +276,7 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 23495884000
+              "status": "skipped"
             }
           },
           {
@@ -292,19 +287,18 @@
               "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 3189540000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:28"
+              "location": "features/support/hooks.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 430471000
+              "duration": 748000
             }
           }
         ]
@@ -325,11 +319,12 @@
         "before": [
           {
             "match": {
-              "location": "features/support/env.rb:24"
+              "location": "features/support/hooks.rb:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 13960817000
+              "status": "failed",
+              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/hooks.rb:7:in `Before'",
+              "duration": 3124000
             }
           }
         ],
@@ -342,8 +337,7 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "passed",
-              "duration": 2778924000
+              "status": "skipped"
             }
           },
           {
@@ -354,8 +348,7 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 21646778000
+              "status": "skipped"
             }
           },
           {
@@ -366,19 +359,18 @@
               "location": "features/stepDefinitions/steps/login.rb:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 2782414000
+              "status": "skipped"
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/env.rb:28"
+              "location": "features/support/hooks.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 450271000
+              "duration": 555000
             }
           }
         ]
