@@ -11,5 +11,5 @@ browser_caps:
     "device": "iPhone 7 Plus"
     "app": "bs://<hashed app-id>"
     "name": "single_test"
-    "browserstack.local": true
+    "browserstack.local": false
     
