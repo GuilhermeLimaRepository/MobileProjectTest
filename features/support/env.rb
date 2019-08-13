@@ -4,6 +4,7 @@ require 'rubygems'
 require 'selenium-webdriver'
 require 'cucumber'
 require 'pry'
+require 'browserstack/local'
 require_relative 'pageHelper.rb'
 require_relative 'utils.rb'
 
