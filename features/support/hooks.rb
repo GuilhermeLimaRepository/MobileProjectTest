@@ -2,6 +2,7 @@
 World(Screens)
 
 Before do
+  $bs_local.stop if enable_local
   $driver.start_driver
 end
 
