@@ -4,7 +4,7 @@ key: "DefmKXUxPW3sysszpKRZ"
  
 common_caps:
   "build": "cucumber-browserstack"
-  "browserstack.debug": false
+  "browserstack.debug": true
  
 browser_caps:
   -
