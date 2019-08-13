@@ -46,7 +46,6 @@ else
 
   if caps['browserstack.local'] && caps['browserstack.local'].to_s == 'true'
     $bs_local = BrowserStack::Local.new
-    $bs_local.stop
     bs_local_args = { "key" => "#{CONFIG['key']}" }
     $bs_local.start(bs_local_args)
   end
@@ -67,5 +66,9 @@ else
   end
 
   $wait = Selenium::WebDriver::Wait.new(:timeout => 30)
+
+  at_exit do
+    $bs_local.stop unless @bs_local.nil? 
+  end  
 
 end
