@@ -12,4 +12,5 @@ browser_caps:
     "app": "bs://<hashed app-id>"
     "name": "single_test"
     "browserstack.local": false
+
     

@@ -11,6 +11,6 @@ browser_caps:
     "device": "Google Pixel"
     "app": "bs://fbe8620879b6e57b4dab075f6c9364a030360694"
     "name": "local_test"
-    "browserstack.local": false
-    
+    "browserstack.local": true
+
     
