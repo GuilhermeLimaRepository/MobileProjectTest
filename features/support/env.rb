@@ -25,7 +25,7 @@ else
   if ENV['PLATFORM'] == 'farmAndroid'
     CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), 'farmAndroid.yml')))
   else  #browserstack_ios
-    CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), '~/Documents/RubyProject/features/support/farmIos.yml')))
+    CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), 'farmIos.yml')))
   end
   
   CONFIG['user'] = ENV['BROWSERSTACK_USERNAME'] || CONFIG['user']
