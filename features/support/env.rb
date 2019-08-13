@@ -23,7 +23,7 @@ else
   TASK_ID = (ENV['TASK_ID'] || 0).to_i
   
   if ENV['PLATFORM'] == 'farmAndroid'
-    CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), '~/Documents/RubyProject/features/support/farmAndroid.yml')))
+    CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), 'farmAndroid.yml')))
   else  #browserstack_ios
     CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), '~/Documents/RubyProject/features/support/farmIos.yml')))
   end
@@ -67,15 +67,3 @@ else
   $wait = Selenium::WebDriver::Wait.new(:timeout => 30)
 
 end
-
-
-# # Coloca as variaveis como global
-# World(Screens)
-
-# Before do
-#   $driver.start_driver
-# end
-
-# After do
-#   $driver.driver_quit
-# end

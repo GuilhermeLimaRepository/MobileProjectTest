@@ -9,5 +9,5 @@ common_caps:
 browser_caps:
   -
     "device": "Google Pixel"
-    "app": "bs://<hashed app-id>"
+    "app": "bs://fbe8620879b6e57b4dab075f6c9364a030360694"
     "name": "single_test"
