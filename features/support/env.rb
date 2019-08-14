@@ -68,7 +68,7 @@ else
   $wait = Selenium::WebDriver::Wait.new(:timeout => 30)
 
   at_exit do
-    $bs_local.stop unless @bs_local.nil? 
+    $bs_local.stop unless $bs_local.nil? 
   end  
 
 end

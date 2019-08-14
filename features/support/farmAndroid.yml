@@ -3,7 +3,7 @@ user: "davos2"
 key: "DefmKXUxPW3sysszpKRZ"
  
 common_caps:
-  "build": "cucumber-browserstack"
+  "build": "Regressāo PagBank"
   "browserstack.debug": true
  
 browser_caps:
