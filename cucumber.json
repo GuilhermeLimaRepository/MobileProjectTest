@@ -29,11 +29,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:6"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
               "status": "passed",
-              "duration": 15219569000
+              "duration": 25921903000
             }
           }
         ],
@@ -47,7 +47,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2479230000
+              "duration": 2954071000
             }
           },
           {
@@ -59,7 +59,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21642694000
+              "duration": 27343488000
             }
           },
           {
@@ -67,22 +67,22 @@
             "name": "Devo me encontrar na home do app",
             "line": 10,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:25"
+              "location": "features/stepDefinitions/steps/login.rb:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1890220000
+              "duration": 3666124000
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:10"
+              "location": "features/support/hooks.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 99692000
+              "duration": 121435000
             }
           }
         ]
@@ -103,12 +103,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:6"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
-              "status": "failed",
-              "error_message": "end of file reached (EOFError)\n./features/support/hooks.rb:7:in `Before'",
-              "duration": 9004344000
+              "status": "passed",
+              "duration": 16704392000
             }
           }
         ],
@@ -121,7 +120,8 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2751905000
             }
           },
           {
@@ -132,7 +132,8 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25051328000
             }
           },
           {
@@ -140,21 +141,22 @@
             "name": "Devo me encontrar na home do app",
             "line": 10,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:25"
+              "location": "features/stepDefinitions/steps/login.rb:26"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3868336000
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:10"
+              "location": "features/support/hooks.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 891000
+              "duration": 89326000
             }
           }
         ]
@@ -175,12 +177,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:6"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
-              "status": "failed",
-              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/hooks.rb:7:in `Before'",
-              "duration": 3547000
+              "status": "passed",
+              "duration": 15081945000
             }
           }
         ],
@@ -193,7 +194,8 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2795354000
             }
           },
           {
@@ -204,7 +206,9 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "An element could not be located on the page using the given search parameters. (Selenium::WebDriver::Error::NoSuchElementError)\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)\n./features/support/utils.rb:29:in `click_id'\n./features/screens/android/login.screen.rb:34:in `pinAccess'\n./features/stepDefinitions/steps/login.rb:15:in `\"Eu finalizar o login com as credenciais {string} e cadastrar o codigo Pin\"'\nfeatures/bdd/login.feature:16:in `Quando Eu finalizar o login com as credenciais \"empresarial@edimburgo.com\" e cadastrar o codigo Pin'\nfeatures/bdd/login.feature:9:in `Quando Eu finalizar o login com as credenciais \"<credenciais>\" e cadastrar o codigo Pin'",
+              "duration": 66820651000
             }
           },
           {
@@ -212,7 +216,7 @@
             "name": "Devo me encontrar na home do app",
             "line": 10,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:25"
+              "location": "features/stepDefinitions/steps/login.rb:26"
             },
             "result": {
               "status": "skipped"
@@ -222,11 +226,11 @@
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:10"
+              "location": "features/support/hooks.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 908000
+              "duration": 112678000
             }
           }
         ]
@@ -247,12 +251,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:6"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
-              "status": "failed",
-              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/hooks.rb:7:in `Before'",
-              "duration": 8168000
+              "status": "passed",
+              "duration": 14980322000
             }
           }
         ],
@@ -265,7 +268,8 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2791622000
             }
           },
           {
@@ -276,7 +280,8 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24023123000
             }
           },
           {
@@ -284,21 +289,22 @@
             "name": "Devo me encontrar na home do app",
             "line": 10,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:25"
+              "location": "features/stepDefinitions/steps/login.rb:26"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3451650000
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:10"
+              "location": "features/support/hooks.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 748000
+              "duration": 102587000
             }
           }
         ]
@@ -319,12 +325,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:6"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
-              "status": "failed",
-              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/hooks.rb:7:in `Before'",
-              "duration": 3124000
+              "status": "passed",
+              "duration": 16212657000
             }
           }
         ],
@@ -337,7 +342,8 @@
               "location": "features/stepDefinitions/steps/login.rb:2"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2995710000
             }
           },
           {
@@ -348,7 +354,8 @@
               "location": "features/stepDefinitions/steps/login.rb:13"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 21256523000
             }
           },
           {
@@ -356,21 +363,22 @@
             "name": "Devo me encontrar na home do app",
             "line": 10,
             "match": {
-              "location": "features/stepDefinitions/steps/login.rb:25"
+              "location": "features/stepDefinitions/steps/login.rb:26"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4689430000
             }
           }
         ],
         "after": [
           {
             "match": {
-              "location": "features/support/hooks.rb:10"
+              "location": "features/support/hooks.rb:8"
             },
             "result": {
               "status": "passed",
-              "duration": 555000
+              "duration": 85924000
             }
           }
         ]

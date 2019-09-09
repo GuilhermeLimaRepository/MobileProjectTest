@@ -2,9 +2,9 @@ class HomeScreen < Utils
 
     def initialize
         @pagBankIcon = 'custom_toolbar_menu_icon'
-        @balanceLabel = 'tv_lbl_balance'
-        @blockedLabel = 'blocked_label'
-        @receivedLabel = 'receive_label'  
+        @balanceValue = 'text_balance_value'
+        @receivedValue = 'text_receivable_value'  
+        @balanceDetailsLink = 'text_balance_details'
     end
-    attr_accessor :balanceLabel, :blockedLabel, :receivedLabel, :pagBankIcon
+    attr_accessor :balanceValue, :balanceDetailsLink, :receivedValue, :pagBankIcon
 end

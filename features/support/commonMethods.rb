@@ -13,9 +13,9 @@ class CommonMethods < Utils
 
     def checkLoginSuccessfull
         @appHomeCheck = HomeScreen.new
-        @appHomeCheck.wait_for_element_exist?(@appHomeCheck.balanceLabel ,5)
-        @appHomeCheck.wait_for_element_exist?(@appHomeCheck.blockedLabel ,5)
-        @appHomeCheck.wait_for_element_exist?(@appHomeCheck.receivedLabel ,5)
+        @appHomeCheck.wait_for_element_exist?(@appHomeCheck.balanceValue ,5)
+        @appHomeCheck.wait_for_element_exist?(@appHomeCheck.balanceDetailsLink ,5)
+        @appHomeCheck.wait_for_element_exist?(@appHomeCheck.receivedValue ,5)
         @appHomeCheck.wait_for_element_exist?(@appHomeCheck.pagBankIcon ,5)
     end    
     

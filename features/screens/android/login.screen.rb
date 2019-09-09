@@ -18,6 +18,8 @@ class LoginScreen < Utils
         
         @blockedScreen = 'title'
         @blockedScreenConfirmButton = 'confirmButton'
+
+        @okPaidAccount = 'btn_done'
     end
 
     attr_accessor :emailField, :passwordField, :enterButton, :blockedScreen, :blockedScreenConfirmButton
@@ -37,5 +39,10 @@ class LoginScreen < Utils
         }
         wait_for_element(@finishBtn)
         click_id(@finishBtn)
+    end    
+
+    def paidAccount
+        wait_for_element(@okPaidAccount)
+        click_id(@okPaidAccount)
     end    
 end
