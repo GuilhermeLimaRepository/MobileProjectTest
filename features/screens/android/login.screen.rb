@@ -16,13 +16,13 @@ class LoginScreen < Utils
         @bulletPin = 'pinDummyEditText'
         @finishBtn = 'btn_pin_success'
         
-        @blockedScreen = 'title'
-        @blockedScreenConfirmButton = 'confirmButton'
+        #@blockedScreen = 'title'
+        #@blockedScreenConfirmButton = 'confirmButton'
 
         @okPaidAccount = 'btn_done'
     end
 
-    attr_accessor :emailField, :passwordField, :enterButton, :blockedScreen, :blockedScreenConfirmButton
+    attr_accessor :emailField, :passwordField, :enterButton, :blockedScreen, :blockedScreenConfirmButton, :okPaidAccount
 
     def onboardSkip
         wait_for_element(@alreadyClient)
@@ -41,8 +41,8 @@ class LoginScreen < Utils
         click_id(@finishBtn)
     end    
 
-    def paidAccount
-        wait_for_element(@okPaidAccount)
-        click_id(@okPaidAccount)
-    end    
+    # def paidAccount
+    #     wait_for_element(@okPaidAccount)
+    #     click_id(@okPaidAccount)
+    # end    
 end

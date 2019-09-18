@@ -13,7 +13,7 @@ Dado("Que eu seja usuário do tipo {string}") do |string|
 Quando("Eu finalizar o login com as credenciais {string} e cadastrar o codigo Pin") do |user|
     commonMethods.appLogin(@emailField, @passwordField, user, CREDENTIALS[:standardPassword])
     login.pinAccess
-    login.paidAccount
+    commonMethods.confirmPaidAccount
 end
 
 #2

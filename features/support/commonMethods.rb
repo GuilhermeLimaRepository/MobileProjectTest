@@ -27,4 +27,10 @@ class CommonMethods < Utils
         @appLoginBlocked.wait_for_element_exist?(@appLoginBlocked.passwordField ,5)
     end    
 
+    def confirmPaidAccount
+        @appConfirmPaidAccount = LoginScreen.new
+        @appConfirmPaidAccount.wait_for_element(@appConfirmPaidAccount.okPaidAccount)
+        @appConfirmPaidAccount.click_id(@appConfirmPaidAccount.okPaidAccount)
+    end  
+
 end
