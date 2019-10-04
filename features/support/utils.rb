@@ -1,29 +1,66 @@
 # Class Base
 class Utils
 
-    #Método para esperar um elemento mapeado estar visível na tela por xpath durante 10s. 
-      def wait_for_xpath(xpath, timeout = 10)
-        @driver.wait_true(timeout) do
-        @driver.exists { @driver.find_element(:xpath, xpath) }
-        end
+      #Método para esperar um elemento mapeado estar visível na tela por id durante 10s.
+      def wait_for_id(id)
+        wait = Selenium::WebDriver::Wait.new timeout: 10
+        @driver.exists { @driver.find_element(:id, id) }
       end
 
-      def clear_fields(id)
-        @driver.find_element(:id, id).clear
-      end  
+    #Método para esperar um elemento mapeado estar visível na tela por xpath durante 10s. 
+      def wait_for_xpath(xpath)
+        wait = Selenium::WebDriver::Wait.new timeout: 10
+        @driver.exists { @driver.find_element(:xpath, xpath) }
+      end
+
+      def wait_for_element_master(element)
+        wait = Selenium::WebDriver::Wait.new timeout: 1
+        if ENV['PLATFORM'] == 'ios'
+            @driver.exists { @driver.find_element(:id, element) }
+        else
+            @driver.exists { @driver.find_element(:xpath, xpath) } 
+        end 
+      end 
+      
+          #Método que estava sendo utilizando no antigo element_helpers 
+      def wait_for_element(identifier)
+        wait = Selenium::WebDriver::Wait.new timeout: 10
+        begin
+          wait.until { find_element(id: identifier).displayed? }
+        rescue
+          false
+        end
+      end
     
       def wait_for_element_exist?(attribute,timeout)
         wait = Selenium::WebDriver::Wait.new timeout: timeout        
         wait.until { find_element(id: attribute).displayed? }
       end
 
-    #Método para esperar um elemento mapeado estar visível na tela por id durante 10s.
-    def wait_for_id(id, timeout = 10)
-      @driver.wait_true(timeout) do 
-      @driver.exists { @driver.find_element(:id, id) }
-      end
-    end
+      def clear_fields_master(element)
+        if ENV['PLATFORM'] == 'ios'
+          @driver.find_element(:id, element).clear
+        else
+          @driver.find_element(:xpath, element).clear
+        end  
+      end 
+
+      def clear_fields(id)
+        @driver.find_element(:id, id).clear
+      end  
+
+      def clear_fields_for_xpath(xpath)
+        @driver.find_element(:xpath, xpath).clear
+      end  
     
+      def click_test(element)
+        begin
+          @driver.find_element(:id, element)
+        rescue
+          @driver.find_element(:xpath, element)  
+        end  
+      end
+
     #Método para clicar um elemento mapeado na tela por id.
       def click_id(id)
         @driver.find_element(:id, id).click
@@ -46,23 +83,22 @@ class Utils
         @driver.find_element(:id, id).send_keys(field)
       end
 
+        #Método para preencher um campo mapeado na tela por xpath.
+      def send_keys_xpath(xpath, field)
+          @driver.find_element(:xpath, xpath).send_keys(field)
+      end
+
+      def send_keys_master(element, text)
+        wait = Selenium::WebDriver::Wait.new timeout: 1
+        if ENV['PLATFORM'] == 'ios'
+          wait.until { find_element(:id, element).send_keys text }
+        else
+          wait.until { find_element(:xpath, element).send_keys text }
+        end  
+      end
+
       def enter_text(text, element)
             wait = Selenium::WebDriver::Wait.new timeout: 30
             wait.until { find_element(:id, element).send_keys text }
-      end
-    
-    #Método para preencher um campo mapeado na tela por xpath.
-      def send_keys_xpath(xpath, field)
-        @driver.find_element(:xpath, xpath).send_keys(field)
-      end
-
-    #Método que estava sendo utilizando no antigo element_helpers 
-      def wait_for_element(identifier)
-        wait = Selenium::WebDriver::Wait.new timeout: 30
-        begin
-          wait.until { find_element(id: identifier).displayed? }
-        rescue
-          false
-        end
       end
     end

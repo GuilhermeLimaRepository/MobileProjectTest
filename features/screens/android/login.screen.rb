@@ -1,8 +1,8 @@
 class LoginScreen < Utils
 
     def initialize
-        @emailField = 'input_email'
-        @passwordField = 'input_password'
+        @emailField = '//android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.EditText'
+        @passwordField = '//android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText'
         @enterButton = 'btn_login'
 
         @startBtn ='btn_continue_pin_register'

@@ -2,12 +2,12 @@ class CommonMethods < Utils
 
     def appLogin(emailField, passwordField, email, password)
         @appLogin = LoginScreen.new
-        @appLogin.wait_for_element(@appLogin.emailField)
-        @appLogin.clear_fields(@appLogin.emailField)
-        @appLogin.send_keys_id(@appLogin.emailField, email)
-        @appLogin.wait_for_element(@appLogin.passwordField)
-        @appLogin.clear_fields(@appLogin.passwordField)
-        @appLogin.send_keys_id(@appLogin.passwordField, password)
+        @appLogin.wait_for_element_master(@appLogin.emailField)
+        @appLogin.clear_fields_master(@appLogin.emailField)
+        @appLogin.send_keys_master(@appLogin.emailField, email)
+        @appLogin.wait_for_element_master(@appLogin.passwordField)
+        @appLogin.clear_fields_master(@appLogin.passwordField)
+        @appLogin.send_keys_master(@appLogin.passwordField, password)
         @appLogin.click_id(@appLogin.enterButton)
     end
 
