@@ -53,10 +53,10 @@ class Utils
         @driver.find_element(:xpath, xpath).clear
       end  
     
-      def click_test(element)
-        begin
+      def click_master(element)
+        if ENV['PLATFORM'] == 'ios'
           @driver.find_element(:id, element)
-        rescue
+        else
           @driver.find_element(:xpath, element)  
         end  
       end
