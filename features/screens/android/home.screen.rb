@@ -1,10 +1,26 @@
 class HomeScreen < Utils
 
     def initialize
-        @pagBankIcon = 'custom_toolbar_menu_icon'
-        @balanceValue = 'text_balance_value'
-        @receivedValue = 'text_receivable_value'  
-        @balanceDetailsLink = 'text_balance_details'
+        @plusButton = 'Button1'
+        @serchBar = 'search_plate'
+        @deleteIcon = 'deletar'  
+        @productRegistrationSucsses = 'tabela_itens'
     end
-    attr_accessor :balanceValue, :balanceDetailsLink, :receivedValue, :pagBankIcon
+
+    def newRegistration
+      begin  
+        wait_for_click(@plusButton, 5)
+      rescue
+        raise "Atenção.. Icone de registro nāo encontrado"
+      end   
+    end    
+
+    def checkProductRegistration
+      begin   
+         wait_for_element_exist?(@productRegistrationSucsses, 5)
+      rescue
+        raise "Atenção.. Produto Registrado nāo encontrado"
+      end    
+    end    
+    
 end

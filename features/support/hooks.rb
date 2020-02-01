@@ -7,5 +7,5 @@ end
 
 After do
   $driver.driver_quit
-  # Code to stop browserstack local after end of test
+  $logger.info("Teste finalizado")
 end

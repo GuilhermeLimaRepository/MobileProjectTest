@@ -1,9 +1,9 @@
    [caps] 
-   app = "/Users/agnunes/Documents/app-myaccount-android/app/build/outputs/apk/debug/app-debug.apk"
+   app = "/Users/agnunes/Downloads/product_registration.apk"
    platformName = "android"
    deviceName = "Anonymous"
-   appActivity = ".MainActivity"
-   appWaitActivity = "br.com.uol.ps.myaccount,br.com.uol.ps.myaccount.MainActivity,br.com.uol.ps.myaccount.presentation.view.PresentationActivity,br.com.uol.ps.myaccount.login.LoginActivity"
+   appActivity = "br.com.pztec.estoque.Inicio"
+   appWaitActivity = "br.com.pztec.estoque.Inicio"
    automationName = "UiAutomator2"
    avdArgs = "-no-window"
    newCommandTimeout = 3600  

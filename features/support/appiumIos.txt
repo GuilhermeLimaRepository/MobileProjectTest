@@ -1,9 +1,0 @@
-    [caps]
-    app = "/Users/agnunes/Library/Developer/Xcode/DerivedData/PSMyAccount-abppxxdavltpeegjndwifuhyzklz/Build/Products/Debug-iphonesimulator/PSMyAccount QA.app"
-    platformName = "ios"
-    platformVersion = "12.4"
-    deviceName = "iPhone 7"
-    automationName = "XCUITest" 
-    autoAcceptAlerts = true
-    noReset = false
-

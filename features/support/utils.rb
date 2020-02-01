@@ -12,15 +12,6 @@ class Utils
         wait = Selenium::WebDriver::Wait.new timeout: 10
         @driver.exists { @driver.find_element(:xpath, xpath) }
       end
-
-      def wait_for_element_master(element)
-        wait = Selenium::WebDriver::Wait.new timeout: 1
-        if ENV['PLATFORM'] == 'ios'
-            @driver.exists { @driver.find_element(:id, element) }
-        else
-            @driver.exists { @driver.find_element(:xpath, xpath) } 
-        end 
-      end 
       
           #Método que estava sendo utilizando no antigo element_helpers 
       def wait_for_element(identifier)
@@ -37,14 +28,6 @@ class Utils
         wait.until { find_element(id: attribute).displayed? }
       end
 
-      def clear_fields_master(element)
-        if ENV['PLATFORM'] == 'ios'
-          @driver.find_element(:id, element).clear
-        else
-          @driver.find_element(:xpath, element).clear
-        end  
-      end 
-
       def clear_fields(id)
         @driver.find_element(:id, id).clear
       end  
@@ -52,14 +35,6 @@ class Utils
       def clear_fields_for_xpath(xpath)
         @driver.find_element(:xpath, xpath).clear
       end  
-    
-      def click_master(element)
-        if ENV['PLATFORM'] == 'ios'
-          @driver.find_element(:id, element)
-        else
-          @driver.find_element(:xpath, element)  
-        end  
-      end
 
     #Método para clicar um elemento mapeado na tela por id.
       def click_id(id)
@@ -88,17 +63,13 @@ class Utils
           @driver.find_element(:xpath, xpath).send_keys(field)
       end
 
-      def send_keys_master(element, text)
-        wait = Selenium::WebDriver::Wait.new timeout: 1
-        if ENV['PLATFORM'] == 'ios'
-          wait.until { find_element(:id, element).send_keys text }
-        else
-          wait.until { find_element(:xpath, element).send_keys text }
-        end  
-      end
-
       def enter_text(text, element)
-            wait = Selenium::WebDriver::Wait.new timeout: 30
-            wait.until { find_element(:id, element).send_keys text }
+          wait = Selenium::WebDriver::Wait.new timeout: 30
+          wait.until { find_element(:id, element).send_keys text }
       end
-    end
+  
+      def scroll_down
+        swipe(start_y: 700, end_y: 400, duration: 250)
+      end 
+
+  end
