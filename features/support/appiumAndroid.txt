@@ -1,5 +1,5 @@
    [caps] 
-   app = "/Users/agnunes/Downloads/product_registration.apk"
+   app = "./product_registration.apk"
    platformName = "android"
    deviceName = "Anonymous"
    appActivity = "br.com.pztec.estoque.Inicio"
@@ -8,6 +8,7 @@
    avdArgs = "-no-window"
    newCommandTimeout = 3600  
    autoGrantPermissions = true
+   autoAcceptAlerts = true
    disableAndroidWatchers = true
    resetKeyboard = true
    [appium_lib]

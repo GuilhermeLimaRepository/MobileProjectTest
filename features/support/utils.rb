@@ -1,11 +1,6 @@
 # Class Base
-class Utils
 
-      #Método para esperar um elemento mapeado estar visível na tela por id durante 10s.
-      def wait_for_id(id)
-        wait = Selenium::WebDriver::Wait.new timeout: 10
-        @driver.exists { @driver.find_element(:id, id) }
-      end
+class Utils
 
     #Método para esperar um elemento mapeado estar visível na tela por xpath durante 10s. 
       def wait_for_xpath(xpath)
@@ -23,15 +18,18 @@ class Utils
         end
       end
     
+    #Método para esperar um elemento mapeado estar visível na tela
       def wait_for_element_exist?(attribute,timeout)
         wait = Selenium::WebDriver::Wait.new timeout: timeout        
         wait.until { find_element(id: attribute).displayed? }
       end
 
+    #Limpa campos passando id  
       def clear_fields(id)
         @driver.find_element(:id, id).clear
       end  
 
+    #Limpa campos passando xpath  
       def clear_fields_for_xpath(xpath)
         @driver.find_element(:xpath, xpath).clear
       end  
@@ -63,13 +61,20 @@ class Utils
           @driver.find_element(:xpath, xpath).send_keys(field)
       end
 
+    #Escreve textos somente android
       def enter_text(text, element)
           wait = Selenium::WebDriver::Wait.new timeout: 30
           wait.until { find_element(:id, element).send_keys text }
       end
   
+    #Realiza swipe na tela  
       def scroll_down
         swipe(start_y: 700, end_y: 400, duration: 250)
-      end 
+      end
+      
+    #aceita alertas  
+      def acceptAllert
+        @driver.switch_to.alert.accept()
+      end  
 
   end

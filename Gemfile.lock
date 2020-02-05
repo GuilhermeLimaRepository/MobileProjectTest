@@ -88,6 +88,7 @@ DEPENDENCIES
   faker (~> 2.10, >= 2.10.1)
   pry (~> 0.12.2)
   rspec (>= 3.8)
+  rspec-expectations (~> 3.4)
   rubygems-bundler (~> 1.4, >= 1.4.5)
   selenium-webdriver (~> 3.142, >= 3.142.1)
 

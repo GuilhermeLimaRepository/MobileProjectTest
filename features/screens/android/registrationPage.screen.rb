@@ -1,5 +1,5 @@
 class RegistrationPage < Utils
-
+  
     def initialize
         @code = 'txt_codigo'
         @description = 'txt_descricao'
@@ -9,13 +9,14 @@ class RegistrationPage < Utils
         @lot = 'txt_lote'
         @save = 'btn_gravar_assunto'
         @codeValue = Faker::Code.npi
-        @descriptionValue = "Test Description"
+        @descriptionValue = Faker::Coffee.blend_name
         @packingValue = Faker::Number.number
         @amontValue = Faker::Number.number
         @unitValue = Faker::Number.number
         @lotValue = Faker::Number.number
     end
     
+  #Realiza um registro  
     def registrationProduct
       begin  
         wait_for_click(@code, 5)
