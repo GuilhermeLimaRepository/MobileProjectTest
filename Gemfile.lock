@@ -52,7 +52,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    rake (12.3.2)
+    rake (12.3.3)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -88,7 +88,6 @@ DEPENDENCIES
   faker (~> 2.10, >= 2.10.1)
   pry (~> 0.12.2)
   rspec (>= 3.8)
-  rspec-expectations (~> 3.4)
   rubygems-bundler (~> 1.4, >= 1.4.5)
   selenium-webdriver (~> 3.142, >= 3.142.1)
 
